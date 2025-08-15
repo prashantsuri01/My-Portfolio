@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prashant Kumar — Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    * { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+    /* Glass card */
+    .glass { background: rgba(255,255,255,0.08); backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,0.12); }
+    .ring-soft { box-shadow: 0 10px 30px rgba(2, 6, 23, 0.25); }
+    .section { scroll-margin-top: 88px; }
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="min-h-screen text-slate-100 bg-slate-950">
+  <!-- Background gradient + blobs -->
+  <div class="fixed inset-0 -z-10">
+    <div class="absolute inset-0 bg-gradient-to-br from-indigo-900 via-slate-900 to-slate-950 opacity-90"></div>
+    <div class="absolute -top-24 -left-24 h-80 w-80 rounded-full bg-indigo-600/30 blur-3xl"></div>
+    <div class="absolute -bottom-24 -right-24 h-80 w-80 rounded-full bg-fuchsia-600/20 blur-3xl"></div>
+  </div>
+
+  <!-- Nav -->
+  <header class="sticky top-0 z-40 bg-slate-950/70 backdrop-blur border-b border-white/10">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#" class="font-bold tracking-tight text-xl">Prashant<span class="text-indigo-400">.</span></a>
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="#about" class="hover:text-indigo-300">About</a>
+        <a href="#skills" class="hover:text-indigo-300">Skills</a>
+        <a href="#projects" class="hover:text-indigo-300">Projects</a>
+        <a href="#timeline" class="hover:text-indigo-300">Timeline</a>
+        <a href="#contact" class="hover:text-indigo-300">Contact</a>
+      </nav>
+      <a href="resume.pdf" class="inline-flex items-center gap-2 px-3 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 transition text-sm font-semibold">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01.88-2.528l4.12-5.488a2 2 0 013.2 0l4.12 5.488A4 4 0 0121 16v3a2 2 0 01-2 2H7a2 2 0 01-2-2v-3z"/>
+        </svg>
+        Resume
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="section" id="home">
+    <div class="max-w-6xl mx-auto px-4 py-12 md:py-20 grid md:grid-cols-[1.1fr,1fr] gap-10 items-center">
+      <div>
+        <div class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-indigo-300/80 mb-4">
+          <span class="h-1.5 w-1.5 rounded-full bg-indigo-400"></span> Available for Frontend Internships
+        </div>
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">Prashant Kumar</h1>
+        <p class="mt-3 text-lg md:text-xl text-slate-300">B.Tech CSE (Data Science) • Frontend Developer</p>
+        <p class="mt-5 text-slate-300/90 max-w-2xl">I craft clean, responsive interfaces and love turning data-driven ideas into delightful web experiences.</p>
+
+        <div class="mt-7 flex flex-wrap gap-3">
+          <a href="#projects" class="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 transition font-semibold inline-flex items-center gap-2">View Projects
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 4.5H21v7.5h-1.5V7.56L4.06 23 3 21.94 18.44 6H13.5V4.5Z"/></svg>
+          </a>
+          <a href="mailto:prashantkumarpk196714@gmail.com" class="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/15 border border-white/10 transition">Contact</a>
+          <a href="tel:+917491979773" class="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/15 border border-white/10 transition">Call</a>
+        </div>
+
+        <div class="mt-6 flex items-center gap-4 text-slate-300">
+          <a class="hover:text-white" href="https://github.com/prashantsuri01" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.38-1.35-1.75-1.35-1.75-1.1-.76.08-.75.08-.75 1.21.09 1.84 1.24 1.84 1.24 1.08 1.85 2.83 1.31 3.52 1 .11-.78.42-1.31.76-1.61-2.66-.3-5.46-1.33-5.46-5.93 0-1.31.47-2.38 1.24-3.22-.13-.31-.54-1.57.12-3.27 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0C16.99 6.1 18 6.42 18 6.42c.66 1.7.25 2.96.12 3.27.77.84 1.24 1.91 1.24 3.22 0 4.61-2.8 5.62-5.47 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.82.58A12 12 0 0 0 12 .5Z"/></svg>
+          </a>
+          <a class="hover:text-white" href="https://www.linkedin.com/in/prashant-kumar-602876254" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3A2.94 2.94 0 0 1 22 6v12a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V6a2.94 2.94 0 0 1 3-3h14Zm-9.7 15.4V10H6.1v8.4h3.2Zm-.1-9.55a1.86 1.86 0 1 0 0-3.73 1.86 1.86 0 0 0 0 3.73ZM20 18.4V13c0-3.26-1.74-4.78-4.06-4.78a3.51 3.51 0 0 0-3.18 1.76h-.05V10h-3.1c.04.97 0 8.4 0 8.4h3.1v-4.69c0-.25.02-.5.1-.68a1.7 1.7 0 0 1 1.58-1.09c1.12 0 1.57.83 1.57 2.06v4.4H20Z"/></svg>
+          </a>
+          <div class="flex items-center gap-2 text-sm text-slate-400">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-300" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7Zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5Z"/></svg>
+            Haldia, West Bengal
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center md:justify-end">
+        <div class="relative ">
+          <div class="absolute inset-0 bg-gradient-to-tr from-indigo-500/40 to-fuchsia-400/40 blur-2xl rounded-full -z-10"></div>
+          <img src="./profiloic.jpg"
+               alt="Prashant Kumar"
+               class="h-52 w-52 md:h-64 md:w-64 rounded-2xl ring-1 ring-white/15 ring-soft object-cover object-top rounded-[50%] zoom-[50px]" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section py-10 md:py-16">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-6 items-start">
+      <div class="md:col-span-2 glass rounded-2xl p-6">
+        <h2 class="text-2xl font-bold mb-3">About</h2>
+        <p class="text-slate-300 leading-relaxed">
+          I am a committed and detail‑oriented Data Science student passionate about building professional web interfaces.
+          Skilled in HTML, CSS, JavaScript, React, Python, R, and SQL, with a knack for transforming ideas into elegant, functional designs.
+        </p>
+      </div>
+      <div class="glass rounded-2xl p-6">
+        <h3 class="font-semibold mb-2">Contact</h3>
+        <ul class="space-y-2 text-slate-300">
+          <li><a class="hover:text-white" href="mailto:prashantkumarpk196714@gmail.com">prashantkumarpk196714@gmail.com</a></li>
+          <li><a class="hover:text-white" href="tel:+917491979773">+91-7491979773</a></li>
+          <li>Haldia, West Bengal, India</li>
+          <li><a class="hover:text-indigo-300 underline" href="resume.pdf" target="_blank" rel="noreferrer">Download Resume</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section py-10 md:py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-4">Skills</h2>
+      <div class="glass rounded-2xl p-6">
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1.5 rounded-full bg-white/10 border border-white/10 text-sm">HTML5</span><span class="px-3 py-1.5 rounded-full bg-white/10 border border-white/10 text-sm">CSS3</span><span class="px-3 py-1.5 rounded-full bg-white/10 border border-white/10 text-sm">JavaScript</span><span class="px-3 py-1.5 rounded-full bg-white/10 border border-white/10 text-sm">React</span><span class="px-3 py-1.5 rounded-full bg-white/10 border border-white/10 text-sm">Java</span><span class="px-3 py-1.5 rounded-full bg-white/10 border border-white/10 text-sm">Python</span><span class="px-3 py-1.5 rounded-full bg-white/10 border border-white/10 text-sm">R</span><span class="px-3 py-1.5 rounded-full bg-white/10 border border-white/10 text-sm">SQL</span><span class="px-3 py-1.5 rounded-full bg-white/10 border border-white/10 text-sm">DBMS</span><span class="px-3 py-1.5 rounded-full bg-white/10 border border-white/10 text-sm">OOPs</span><span class="px-3 py-1.5 rounded-full bg-white/10 border border-white/10 text-sm">Git/GitHub</span><span class="px-3 py-1.5 rounded-full bg-white/10 border border-white/10 text-sm">Figma</span><span class="px-3 py-1.5 rounded-full bg-white/10 border border-white/10 text-sm">Team Management</span><span class="px-3 py-1.5 rounded-full bg-white/10 border border-white/10 text-sm">Communication Skills</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section py-10 md:py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex items-end justify-between gap-4 mb-4">
+        <h2 class="text-2xl font-bold">Projects</h2>
+        <div class="text-sm text-slate-400">2 selected projects</div>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- Weather Website -->
+        <article class="glass rounded-2xl overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1501973801540-537f08ccae7b?q=80&w=1400&auto=format&fit=crop" alt="Weather Website" class="h-44 w-full object-cover">
+          <div class="p-6 space-y-3">
+            <div class="flex items-center justify-between">
+              <h3 class="text-xl font-semibold">Weather Website</h3>
+              <div class="text-xs text-slate-400">HTML • CSS • JS • API</div>
+            </div>
+            <p class="text-slate-300">Responsive web app showing real-time weather data for any city using a public weather API. Includes search, temperature, humidity, wind speed, and conditions.</p>
+            <div class="flex gap-3">
+              <a href="https://prashantsuri01.github.io/Weather_Site/" target="_blank" rel="noreferrer" class="px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-sm font-semibold">Live</a>
+              <a href="https://github.com/prashantsuri01/Weather_Site" target="_blank" rel="noreferrer" class="px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/15 border border-white/10 text-sm">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Amazon Clone -->
+        <article class="glass rounded-2xl overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1400&auto=format&fit=crop" alt="Amazon Clone" class="h-44 w-full object-cover">
+          <div class="p-6 space-y-3">
+            <div class="flex items-center justify-between">
+              <h3 class="text-xl font-semibold">Amazon Clone</h3>
+              <div class="text-xs text-slate-400">HTML • CSS • JS • Java</div>
+            </div>
+            <p class="text-slate-300">Responsive frontend replica of Amazon’s shopping interface with product listing, search, filter, and add-to-cart functionality.</p>
+            <div class="flex gap-3">
+              <a href="https://prashantsuri01.github.io/Amazon_Clone/" target="_blank" rel="noreferrer" class="px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-sm font-semibold">Live</a>
+              <a href="https://github.com/prashantsuri01/Amazon_Clone" target="_blank" rel="noreferrer" class="px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/15 border border-white/10 text-sm">Code</a>
+            </div>
+          </div>
+        </article>
+
+
+        <article class="glass rounded-2xl overflow-hidden">
+          <img src="./movie.png" alt="Amazon Clone" class="h-44 w-full object-cover">
+          <div class="p-6 space-y-3">
+            <div class="flex items-center justify-between">
+              <h3 class="text-xl font-semibold">Movie Search — Enhanced</h3>
+              <div class="text-xs text-slate-400">HTML • CSS • JS • Java</div>
+            </div>
+            <p class="text-slate-300">This project is a Movie Search App that lets users search for movies, view details, load more results, and switch between light and dark themes, with automatic popular movie suggestions on page load.</p>
+            <div class="flex gap-3">
+              <a href="https://prashantsuri01.github.io/Movie-Search-Enhanced/" target="_blank" rel="noreferrer" class="px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-sm font-semibold">Live</a>
+              <a href="https://github.com/prashantsuri01/Movie-Search-Enhanced" target="_blank" rel="noreferrer" class="px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/15 border border-white/10 text-sm">Code</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section id="timeline" class="section py-10 md:py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-4">Timeline</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- Education -->
+        <div class="space-y-4">
+          <div class="text-sm uppercase tracking-widest text-indigo-300/80">Education</div>
+          <div class="glass rounded-2xl p-6 space-y-4">
+            <div>
+              <div class="font-semibold">B.Tech - CSE (Data Science)</div>
+              <div class="text-slate-400 text-sm">Haldia Institute Of Technology • 2022 – 2026</div>
+              <div class="text-slate-300 text-sm mt-1">CGPA: 6.95/10</div>
+            </div>
+            <div class="border-t border-white/10 pt-4">
+              <div class="font-semibold">12th - Science</div>
+              <div class="text-slate-400 text-sm">R.R. College, Sheohar • 2022</div>
+              <div class="text-slate-300 text-sm mt-1">Percentage: 62.6%</div>
+            </div>
+            <div class="border-t border-white/10 pt-4">
+              <div class="font-semibold">10th</div>
+              <div class="text-slate-400 text-sm">DAV Public School, East Champaran • 2020</div>
+              <div class="text-slate-300 text-sm mt-1">Percentage: 64%</div>
+            </div>
+          </div>
+        </div>
+        <!-- Work / POR -->
+        <div class="space-y-4">
+          <div class="text-sm uppercase tracking-widest text-indigo-300/80">Positions & Volunteering</div>
+          <div class="glass rounded-2xl p-6 space-y-4">
+            <div>
+              <div class="font-semibold">Public Relation Head</div>
+              <div class="text-slate-400 text-sm">ACM Technical Club • Ongoing</div>
+              <ul class="list-disc list-inside text-slate-300 text-sm mt-1 space-y-1">
+                <li>Promoted club events, activities, and achievements to the community.</li>
+                <li>Created buzz around initiatives, fostering community and innovation.</li>
+              </ul>
+            </div>
+            <div class="border-t border-white/10 pt-4">
+              <div class="font-semibold">Marketing Head</div>
+              <div class="text-slate-400 text-sm">NEEDS (Non-Profit) • Ongoing</div>
+              <ul class="list-disc list-inside text-slate-300 text-sm mt-1 space-y-1">
+                <li>Volunteered to provide free elementary education to underprivileged students.</li>
+                <li>Worked towards breaking the cycle of poverty through education.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section py-10 md:py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="glass rounded-2xl p-6">
+        <h2 class="text-2xl font-bold mb-2">Get in touch</h2>
+        <p class="text-slate-300 mb-4">Have an opportunity or just want to say hi? Email or call me directly.</p>
+        <div class="flex flex-wrap gap-3">
+          <a href="mailto:prashantkumarpk196714@gmail.com" class="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 transition font-semibold">Email</a>
+          <a href="tel:+917491979773" class="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/15 border border-white/10">Call</a>
+          <a href="resume.pdf" class="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/15 border border-white/10">Download Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-10 text-center text-slate-400">
+     Prashant Kumar • Built with Tailwind
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
